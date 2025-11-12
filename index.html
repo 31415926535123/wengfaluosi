@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            width:100%
+        }
+        div{
+            width:100%;
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let image=''
+        image += '<div>'
+        for(let i=1;i<=12;i++){
+            image += `<img src="${i}.png" width="1125" height="2436" />`
+        }
+        image += '</div>'
+        document.body.innerHTML += image
+    </script>
+</body>
+</html>
